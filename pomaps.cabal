@@ -34,15 +34,15 @@ library
       src
   ghc-options: -Wall
   build-depends:
-      base >= 4.6.0.0 && < 4.15
+      base >= 4.6.0.0
     -- oneShot
-    , ghc-prim >= 0.4 && < 0.7
-    , deepseq >= 1.1 && < 1.5
+    , ghc-prim >= 0.4
+    , deepseq >= 1.1
     -- We depend on the internal modules of containers,
     -- so we have to track development really close.
     -- Data.Map.Internal is only available since 0.5.9,
     -- of which 0.5.9.2 is the first safe version
-    , containers >= 0.5.9.2 && <= 0.6.4.1
+    , containers >= 0.5.9.2
     -- We need PartialOrd instances for ()
     , lattices >= 1.7
   exposed-modules:
